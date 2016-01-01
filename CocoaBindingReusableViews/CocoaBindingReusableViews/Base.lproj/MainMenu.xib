@@ -14,6 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="7I6-tN-61w" customClass="ManagersWindowController" customModule="CocoaBindingReusableViews" customModuleProvider="target">
             <connections>
+                <outlet property="employeesArrCon" destination="joS-Y8-PIX" id="d8H-NL-vyv"/>
+                <outlet property="managersArrCon" destination="PEQ-cb-Hxn" id="tjl-IC-RDN"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="Cya-hX-8d3"/>
             </connections>
         </customObject>

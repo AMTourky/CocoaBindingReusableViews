@@ -11,5 +11,10 @@ import Cocoa
 
 class InspectorWindowController: NSWindowController
 {
+    var inspectedPerson: Person?
     
+    func inspect(person: Person)
+    {
+        print("inspecting: ", person.firstName)
+    }
 }
