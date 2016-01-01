@@ -18,6 +18,8 @@
 		EB9BF7601C37096500B26ED0 /* Manager+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF75A1C37096500B26ED0 /* Manager+CoreDataProperties.swift */; };
 		EB9BF7611C37096500B26ED0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF75B1C37096500B26ED0 /* Person.swift */; };
 		EB9BF7621C37096500B26ED0 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF75C1C37096500B26ED0 /* Person+CoreDataProperties.swift */; };
+		EB9BF7641C370E4500B26ED0 /* Inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9BF7631C370E4500B26ED0 /* Inspector.xib */; };
+		EB9BF7671C370E8100B26ED0 /* InspectorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7661C370E8100B26ED0 /* InspectorWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EB9BF75A1C37096500B26ED0 /* Manager+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manager+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EB9BF75B1C37096500B26ED0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EB9BF75C1C37096500B26ED0 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9BF7631C370E4500B26ED0 /* Inspector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Inspector.xib; path = CocoaBindingReusableViews/XIBs/Inspector.xib; sourceTree = "<group>"; };
+		EB9BF7661C370E8100B26ED0 /* InspectorWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InspectorWindowController.swift; path = "CocoaBindingReusableViews/UI Classes/InspectorWindowController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 		EB9BF72B1C37043200B26ED0 = {
 			isa = PBXGroup;
 			children = (
+				EB9BF7651C370E4B00B26ED0 /* XIBs */,
 				EB9BF7541C37073900B26ED0 /* UI Classes */,
 				EB9BF7531C37067E00B26ED0 /* Core Data Models */,
 				EB9BF7361C37043200B26ED0 /* CocoaBindingReusableViews */,
@@ -95,8 +100,17 @@
 			isa = PBXGroup;
 			children = (
 				EB9BF7551C37078700B26ED0 /* ManagersWindowController.swift */,
+				EB9BF7661C370E8100B26ED0 /* InspectorWindowController.swift */,
 			);
 			name = "UI Classes";
+			sourceTree = "<group>";
+		};
+		EB9BF7651C370E4B00B26ED0 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BF7631C370E4500B26ED0 /* Inspector.xib */,
+			);
+			name = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9BF73D1C37043200B26ED0 /* Assets.xcassets in Resources */,
+				EB9BF7641C370E4500B26ED0 /* Inspector.xib in Resources */,
 				EB9BF7401C37043200B26ED0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +191,7 @@
 				EB9BF73B1C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld in Sources */,
 				EB9BF7601C37096500B26ED0 /* Manager+CoreDataProperties.swift in Sources */,
 				EB9BF7561C37078700B26ED0 /* ManagersWindowController.swift in Sources */,
+				EB9BF7671C370E8100B26ED0 /* InspectorWindowController.swift in Sources */,
 				EB9BF7611C37096500B26ED0 /* Person.swift in Sources */,
 				EB9BF75E1C37096500B26ED0 /* Employee+CoreDataProperties.swift in Sources */,
 			);

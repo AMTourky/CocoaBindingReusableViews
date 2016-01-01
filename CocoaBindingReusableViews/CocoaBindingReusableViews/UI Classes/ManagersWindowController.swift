@@ -11,5 +11,11 @@ import Cocoa
 
 class ManagersWindowController: NSWindowController
 {
+    var inspector: InspectorWindowController?
     
+    override func awakeFromNib()
+    {
+        self.inspector = InspectorWindowController(windowNibName: "Inspector")
+        self.inspector?.showWindow(self)
+    }
 }
