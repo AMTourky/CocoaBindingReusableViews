@@ -10,8 +10,12 @@ import Foundation
 import CoreData
 
 
-class Person: NSManagedObject {
+class Person: NSManagedObject
+{
 
-// Insert code here to add functionality to your managed object subclass
+    var inspectorTabsInfo: [[String: String]]
+    {
+        return [["tabTitle": "Basic Info", "tabNibName": "PersonInspector"]]
+    }
 
 }

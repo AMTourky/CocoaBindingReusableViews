@@ -10,8 +10,14 @@ import Foundation
 import CoreData
 
 
-class Manager: Person {
-
-// Insert code here to add functionality to your managed object subclass
+class Manager: Person
+{
+    
+    override var inspectorTabsInfo: [[String: String]]
+    {
+        var parentTabsInfo = [["tabTitle": "Manger Info", "tabNibName": "ManagerInspector"]]
+        parentTabsInfo.appendContentsOf(super.inspectorTabsInfo)
+        return parentTabsInfo
+    }
 
 }
