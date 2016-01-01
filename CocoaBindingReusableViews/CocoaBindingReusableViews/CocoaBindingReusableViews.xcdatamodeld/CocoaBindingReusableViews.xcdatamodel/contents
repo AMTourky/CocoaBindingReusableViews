@@ -11,13 +11,13 @@
     </entity>
     <entity name="Person" representedClassName=".Person" isAbstract="YES" syncable="YES">
         <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" defaultValueString="first name.." syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" defaultValueString="last name.." syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Employee" positionX="-54" positionY="-9" width="128" height="90"/>
         <element name="Manager" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>
