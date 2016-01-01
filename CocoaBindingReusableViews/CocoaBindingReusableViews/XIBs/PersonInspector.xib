@@ -83,14 +83,14 @@
                 </textField>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbI-E9-k6I" userLabel="Gender popup">
                     <rect key="frame" x="207" y="17" width="110" height="26"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="YUR-FM-W5h">
+                    <popUpButtonCell key="cell" type="push" title="Unspecified" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Lts-vE-CvZ" id="YUR-FM-W5h">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" id="G6Q-Hw-DVO">
                             <items>
-                                <menuItem title="Unspecified" id="Lts-vE-CvZ"/>
-                                <menuItem title="Female" state="on" id="V7e-Oe-icQ" userLabel="Male"/>
-                                <menuItem title="Male" id="KK6-7z-edu" userLabel="Female"/>
+                                <menuItem title="Unspecified" state="on" id="Lts-vE-CvZ"/>
+                                <menuItem title="Female" id="V7e-Oe-icQ"/>
+                                <menuItem title="Male" id="KK6-7z-edu"/>
                             </items>
                         </menu>
                     </popUpButtonCell>

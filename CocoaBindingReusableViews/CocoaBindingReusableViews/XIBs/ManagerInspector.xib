@@ -14,14 +14,14 @@
             <subviews>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-lf-cNQ" userLabel="Department popup">
                     <rect key="frame" x="209" y="15" width="110" height="26"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="fq9-gY-M2N">
+                    <popUpButtonCell key="cell" type="push" title="Accounting" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Jdq-G3-Sv6" id="fq9-gY-M2N">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" id="ztd-2G-hhV">
                             <items>
-                                <menuItem title="Development" id="ECg-9I-XYM" userLabel="Engineerting"/>
+                                <menuItem title="Engineering" id="ECg-9I-XYM" userLabel="Engineerting"/>
                                 <menuItem title="Finance" id="ZTp-uV-xUe" userLabel="Finance"/>
-                                <menuItem title="Accounting" id="Jdq-G3-Sv6" userLabel="Accounting"/>
+                                <menuItem title="Accounting" state="on" id="Jdq-G3-Sv6" userLabel="Accounting"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
