@@ -15,8 +15,8 @@ class Manager: Person
     
     override var inspectorTabsInfo: [[String: String]]
     {
-        var parentTabsInfo = [["tabTitle": "Manger Info", "tabNibName": "ManagerInspector"]]
-        parentTabsInfo.appendContentsOf(super.inspectorTabsInfo)
+        var parentTabsInfo = super.inspectorTabsInfo
+        parentTabsInfo.append(["tabTitle": "Manger Info", "tabNibName": "ManagerInspector"])
         return parentTabsInfo
     }
 
