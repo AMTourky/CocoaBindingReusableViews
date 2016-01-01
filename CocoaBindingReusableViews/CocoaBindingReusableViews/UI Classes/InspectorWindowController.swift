@@ -12,9 +12,28 @@ import Cocoa
 class InspectorWindowController: NSWindowController
 {
     var inspectedPerson: Person?
+    @IBOutlet var tabView: NSTabView?
     
     func inspect(person: Person)
     {
-        print("inspecting: ", person.firstName)
+        self.inspectedPerson = person
+        self.removeAllTabItems()
+        self.loadTabViewItemsForInspectedPerson()
+    }
+    
+    func removeAllTabItems()
+    {
+        if self.tabView?.tabViewItems.count > 0
+        {
+            for tabViewItem in self.tabView!.tabViewItems
+            {
+                self.tabView?.removeTabViewItem(tabViewItem)
+            }
+        }
+    }
+    
+    func loadTabViewItemsForInspectedPerson()
+    {
+        // TODO: load inspectors required by person
     }
 }
