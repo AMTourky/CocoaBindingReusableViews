@@ -13,13 +13,16 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-OZ-9ZD" userLabel="Salary Text Field">
-                    <rect key="frame" x="254" y="53" width="206" height="22"/>
+                    <rect key="frame" x="209" y="53" width="250" height="22"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="K0Z-a5-4gV">
                         <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="lgT-zv-5uC"/>
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <binding destination="mdS-BC-Rp1" name="value" keyPath="selection.salary" id="WXB-Hl-QHL"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-3f-xRg">
                     <rect key="frame" x="18" y="58" width="139" height="17"/>
@@ -38,7 +41,7 @@
                     </textFieldCell>
                 </textField>
                 <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acN-ya-kMy">
-                    <rect key="frame" x="254" y="17" width="110" height="27"/>
+                    <rect key="frame" x="209" y="17" width="110" height="27"/>
                     <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="th7-qr-GQl">
                         <font key="font" metaFont="system"/>
                         <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
@@ -48,9 +51,13 @@
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                     </datePickerCell>
+                    <connections>
+                        <binding destination="mdS-BC-Rp1" name="value" keyPath="selection.hireDate" id="KQY-vg-AXC"/>
+                    </connections>
                 </datePicker>
             </subviews>
             <point key="canvasLocation" x="406" y="243.5"/>
         </customView>
+        <objectController mode="entity" entityName="Employee" id="mdS-BC-Rp1" userLabel="Employee Object Controller"/>
     </objects>
 </document>

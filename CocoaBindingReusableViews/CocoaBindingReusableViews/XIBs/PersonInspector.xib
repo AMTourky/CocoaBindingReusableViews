@@ -13,12 +13,15 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-kf-oMB" userLabel="First Name Text Field">
-                    <rect key="frame" x="209" y="109" width="251" height="22"/>
+                    <rect key="frame" x="209" y="109" width="250" height="22"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="rb5-Fq-Sa9">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <binding destination="rIy-d6-Lcv" name="value" keyPath="selection.firstName" id="bU5-tz-ID3"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-UR-e9I">
                     <rect key="frame" x="18" y="82" width="168" height="17"/>
@@ -29,12 +32,15 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPp-7c-Xfw" userLabel="Last Name Text Field">
-                    <rect key="frame" x="209" y="79" width="251" height="22"/>
+                    <rect key="frame" x="209" y="79" width="250" height="22"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="POv-x6-cu2">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <binding destination="rIy-d6-Lcv" name="value" keyPath="selection.lastName" id="HtY-84-gQ2"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7KD-AI-3wq">
                     <rect key="frame" x="18" y="52" width="168" height="17"/>
@@ -63,6 +69,9 @@
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                     </datePickerCell>
+                    <connections>
+                        <binding destination="rIy-d6-Lcv" name="value" keyPath="selection.dateOfBirth" id="BwR-F9-tG0"/>
+                    </connections>
                 </datePicker>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJo-GF-XaA">
                     <rect key="frame" x="18" y="22" width="168" height="17"/>
@@ -73,7 +82,7 @@
                     </textFieldCell>
                 </textField>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbI-E9-k6I" userLabel="Gender popup">
-                    <rect key="frame" x="207" y="17" width="112" height="26"/>
+                    <rect key="frame" x="207" y="17" width="110" height="26"/>
                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="YUR-FM-W5h">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
@@ -85,9 +94,13 @@
                             </items>
                         </menu>
                     </popUpButtonCell>
+                    <connections>
+                        <binding destination="rIy-d6-Lcv" name="selectedValue" keyPath="selection.gender" id="MBa-Sg-EPq"/>
+                    </connections>
                 </popUpButton>
             </subviews>
             <point key="canvasLocation" x="406" y="271.5"/>
         </customView>
+        <objectController mode="entity" entityName="Person" id="rIy-d6-Lcv" userLabel="Person Object Controller"/>
     </objects>
 </document>
