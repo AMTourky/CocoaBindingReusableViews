@@ -34,6 +34,42 @@ class InspectorWindowController: NSWindowController
     
     func loadTabViewItemsForInspectedPerson()
     {
-        // TODO: load inspectors required by person
+        guard let theInspectedPerson = self.inspectedPerson
+        else { return }
+        
+        for tabInfo in theInspectedPerson.inspectorTabsInfo
+        {
+            if let theNibName = tabInfo["tabNibName"], theTabTitle = tabInfo["tabTitle"]
+            {
+                let newTabViewItem = NSTabViewItem(identifier: "")
+                newTabViewItem.label = theTabTitle
+                
+                self.populateTabViewItem(newTabViewItem, fromNibName: theNibName)
+                
+                self.tabView?.addTabViewItem(newTabViewItem)
+            }
+        }
     }
+    
+    func populateTabViewItem(tabViewItem: NSTabViewItem, fromNibName nibName: String)
+    {
+        var topLevelObjects: NSArray?
+        NSBundle.mainBundle().loadNibNamed(nibName, owner: self, topLevelObjects: &topLevelObjects)
+        
+        guard let theTopLevelObjects = topLevelObjects
+        else { return }
+        
+        for object in theTopLevelObjects
+        {
+            if let theTabView = object as? NSView
+            {
+                tabViewItem.view = theTabView
+            }
+            else if let theTabObjectController = object as? NSObjectController
+            {
+                theTabObjectController.content = self.inspectedPerson
+            }
+        }
+    }
+    
 }
