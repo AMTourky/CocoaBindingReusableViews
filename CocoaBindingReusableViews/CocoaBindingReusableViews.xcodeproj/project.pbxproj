@@ -11,6 +11,12 @@
 		EB9BF73B1C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7391C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld */; };
 		EB9BF73D1C37043200B26ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9BF73C1C37043200B26ED0 /* Assets.xcassets */; };
 		EB9BF7401C37043200B26ED0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9BF73E1C37043200B26ED0 /* MainMenu.xib */; };
+		EB9BF74D1C37067600B26ED0 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7471C37067600B26ED0 /* Person+CoreDataProperties.swift */; };
+		EB9BF74E1C37067600B26ED0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7481C37067600B26ED0 /* Person.swift */; };
+		EB9BF74F1C37067600B26ED0 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7491C37067600B26ED0 /* Employee+CoreDataProperties.swift */; };
+		EB9BF7501C37067600B26ED0 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF74A1C37067600B26ED0 /* Employee.swift */; };
+		EB9BF7511C37067600B26ED0 /* Manager+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF74B1C37067600B26ED0 /* Manager+CoreDataProperties.swift */; };
+		EB9BF7521C37067600B26ED0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF74C1C37067600B26ED0 /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		EB9BF73C1C37043200B26ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9BF73F1C37043200B26ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EB9BF7411C37043200B26ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9BF7471C37067600B26ED0 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "CocoaBindingReusableViews/Core Data/Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9BF7481C37067600B26ED0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = "CocoaBindingReusableViews/Core Data/Person.swift"; sourceTree = "<group>"; };
+		EB9BF7491C37067600B26ED0 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Employee+CoreDataProperties.swift"; path = "CocoaBindingReusableViews/Core Data/Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9BF74A1C37067600B26ED0 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Employee.swift; path = "CocoaBindingReusableViews/Core Data/Employee.swift"; sourceTree = "<group>"; };
+		EB9BF74B1C37067600B26ED0 /* Manager+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Manager+CoreDataProperties.swift"; path = "CocoaBindingReusableViews/Core Data/Manager+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9BF74C1C37067600B26ED0 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = "CocoaBindingReusableViews/Core Data/Manager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 		EB9BF72B1C37043200B26ED0 = {
 			isa = PBXGroup;
 			children = (
+				EB9BF7531C37067E00B26ED0 /* Core Data Models */,
 				EB9BF7361C37043200B26ED0 /* CocoaBindingReusableViews */,
 				EB9BF7351C37043200B26ED0 /* Products */,
 			);
@@ -59,6 +72,19 @@
 				EB9BF7391C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld */,
 			);
 			path = CocoaBindingReusableViews;
+			sourceTree = "<group>";
+		};
+		EB9BF7531C37067E00B26ED0 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BF7471C37067600B26ED0 /* Person+CoreDataProperties.swift */,
+				EB9BF7481C37067600B26ED0 /* Person.swift */,
+				EB9BF7491C37067600B26ED0 /* Employee+CoreDataProperties.swift */,
+				EB9BF74A1C37067600B26ED0 /* Employee.swift */,
+				EB9BF74B1C37067600B26ED0 /* Manager+CoreDataProperties.swift */,
+				EB9BF74C1C37067600B26ED0 /* Manager.swift */,
+			);
+			name = "Core Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9BF7381C37043200B26ED0 /* AppDelegate.swift in Sources */,
+				EB9BF7501C37067600B26ED0 /* Employee.swift in Sources */,
 				EB9BF73B1C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld in Sources */,
+				EB9BF7521C37067600B26ED0 /* Manager.swift in Sources */,
+				EB9BF74E1C37067600B26ED0 /* Person.swift in Sources */,
+				EB9BF7511C37067600B26ED0 /* Manager+CoreDataProperties.swift in Sources */,
+				EB9BF74D1C37067600B26ED0 /* Person+CoreDataProperties.swift in Sources */,
+				EB9BF74F1C37067600B26ED0 /* Employee+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
