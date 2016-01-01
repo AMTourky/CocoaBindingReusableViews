@@ -39,4 +39,10 @@ class ManagersWindowController: NSWindowController
         }
     }
     
+    deinit
+    {
+        self.managersArrCon?.removeObserver(self, forKeyPath: "selection")
+        self.employeesArrCon?.removeObserver(self, forKeyPath: "selection")
+    }
+    
 }
