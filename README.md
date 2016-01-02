@@ -11,5 +11,5 @@ So, as reusable code is highly prefered, reusable views are as well! and this is
 ### Features:
   - Core Data Binding
   - Master details binding
-  - Load views and Object Controllers dynamically
+  - Load views and set Object Controllers content dynamically
 
