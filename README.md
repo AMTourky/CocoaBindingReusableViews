@@ -13,3 +13,4 @@ So, as reusable code is highly prefered, reusable views are as well! and this is
   - Master details binding
   - Load views and set Object Controllers content dynamically
 
+For more: http://amtourky.me/2016/01/02/reusable-xibs-in-cocoa-binding-dry-views/
