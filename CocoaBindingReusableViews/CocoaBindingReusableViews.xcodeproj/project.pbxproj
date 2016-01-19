@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EB4D53491C4A6A46000573D3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4D53481C4A6A46000573D3 /* Sparkle.framework */; };
 		EB4D534B1C4A6A9B000573D3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB4D53481C4A6A46000573D3 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB4D53521C4C5524000573D3 /* dsa_priv.pem in Resources */ = {isa = PBXBuildFile; fileRef = EB4D53501C4C5524000573D3 /* dsa_priv.pem */; };
 		EB4D53531C4C5524000573D3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = EB4D53511C4C5524000573D3 /* dsa_pub.pem */; };
 		EB9BF7381C37043200B26ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7371C37043200B26ED0 /* AppDelegate.swift */; };
 		EB9BF73B1C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9BF7391C37043200B26ED0 /* CocoaBindingReusableViews.xcdatamodeld */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		EB4D53481C4A6A46000573D3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		EB4D53501C4C5524000573D3 /* dsa_priv.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
 		EB4D53511C4C5524000573D3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		EB9BF7341C37043200B26ED0 /* CocoaBindingReusableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaBindingReusableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9BF7371C37043200B26ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 		EB9BF72B1C37043200B26ED0 = {
 			isa = PBXGroup;
 			children = (
-				EB4D53501C4C5524000573D3 /* dsa_priv.pem */,
 				EB4D53511C4C5524000573D3 /* dsa_pub.pem */,
 				EB9BF7651C370E4B00B26ED0 /* XIBs */,
 				EB9BF7541C37073900B26ED0 /* UI Classes */,
@@ -208,7 +205,6 @@
 				EB9BF73D1C37043200B26ED0 /* Assets.xcassets in Resources */,
 				EB4D53531C4C5524000573D3 /* dsa_pub.pem in Resources */,
 				EB9BF7641C370E4500B26ED0 /* Inspector.xib in Resources */,
-				EB4D53521C4C5524000573D3 /* dsa_priv.pem in Resources */,
 				EB9BF76D1C37239600B26ED0 /* PersonInspector.xib in Resources */,
 				EB9BF76B1C37238200B26ED0 /* EmployeeInspector.xib in Resources */,
 				EB9BF7401C37043200B26ED0 /* MainMenu.xib in Resources */,
