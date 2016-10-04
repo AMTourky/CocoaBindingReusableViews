@@ -1,3 +1,4 @@
+# DryView the NSView is available, a more felixible and dynamic approach: https://github.com/AMTourky/CocoaBindingDryView-ReusableViews
 # CocoaBindingReusableViews
 A sample OS X app showing how to reuse views on an app which uses cocoa binding and core data
 
